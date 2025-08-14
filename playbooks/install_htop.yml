@@ -1,0 +1,14 @@
+---
+- name: Instalar o htop nos servidores do lab
+  hosts: lab_nodes
+  become: yes
+
+  tasks:
+    - name: Atualizar o cache do apt
+      apt:
+        update_cache: yes
+
+    - name: Instalar o pacote htop
+      apt:
+        name: htop
+        state: present

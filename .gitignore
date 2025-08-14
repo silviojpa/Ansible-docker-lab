@@ -1,0 +1,6 @@
+# Ignorar arquivos de retry do Ansible
+*.retry
+
+# Ignorar pastas de ambiente virtual Python (boa prática)
+.venv/
+venv/

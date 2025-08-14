@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  node1:
+    build: ./docker  # Alterado para apontar para a pasta 'docker'
+    hostname: node1
+    container_name: ansible-node1
+
+  node2:
+    build: ./docker  # Alterado para apontar para a pasta 'docker'
+    hostname: node2
+    container_name: ansible-node2
