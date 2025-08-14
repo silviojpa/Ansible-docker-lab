@@ -1,0 +1,20 @@
+# 1. Inicia um repositório Git na sua pasta local
+#    O '-b main' define o nome da branch principal como 'main'
+git init -b main
+
+# 2. Adiciona todos os arquivos do projeto para serem monitorados pelo Git
+git add .
+
+# 3. Cria o "pacote" de mudanças (commit) com uma mensagem descritiva
+git commit -m "Commit inicial: Estrutura do laboratório Ansible com Docker"
+
+# 4. Conecta seu repositório local com o repositório remoto no GitHub
+#    Lembre-se de substituir a URL pela URL do SEU repositório!
+git remote add origin https://github.com/SEU-USUARIO/ansible-docker-lab.git
+
+# 5. (Opcional) Verifica se a conexão remota foi feita corretamente
+git remote -v
+
+# 6. Envia seu commit para o GitHub
+#    O '-u' faz com que a branch local 'main' siga a branch remota 'main'
+git push -u origin main
